@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/aos.css">
     <script src="https://kit.fontawesome.com/a01277f843.js" crossorigin="anonymous"></script>
-    
+
 
 </head>
 
@@ -35,95 +35,97 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light primary-color fixed-top">
+        <nav id="custom-nav" class="navbar navbar-light primary-color fixed-top justify-content-end">
             <a class="navbar-brand" href="#">
-                <img src="img/logo/logo-poweredbyjacobs.svg" width="auto" height="60" alt="Pavy">
+                    <img height="60px"> 
             </a>
-            <a class="btn-cta ml-auto mr-3 order-lg-last" type="button" style="color:#FFFFFF;">LEARN MORE</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navDropdown"
+            <!-- <a class="btn-cta ml-auto mr-3 order-lg-last" type="button" style="color:#FFFFFF;" data-toggle="modal"
+                data-target="#emailModal">SIGN UP</a> -->
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navDropdown"
                 aria-controls="navDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse text-right justify-content-end" id="navDropdown">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#solution">SOLUTION <span class="sr-only">(current)</span></a>
+                        <li class="nav-item active">
+                                <a class="nav-link" href="#howitworks"><span class="sr-only">(current)</span>HOW IT WORKS</a>
+                            </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#solution">SOLUTION</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#benfeat">BENEFITS & FEATURES</a>
+                        <a class="nav-link" href="#benfeat">KEY FEATURES</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#howitworks">HOW IT WORKS</a>
+                    <li class="nav-item py-1">
+                            <a class="btn-cta order-lg-last" type="button" style="color:#FFFFFF;" data-toggle="modal"
+                            data-target="#emailModal">SIGN UP</a>
                     </li>
                 </ul>
             </div>
         </nav>
-        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-            <div class="d-flex flex-grow-1 justify-content-star">
-                <span class="w-100 d-lg-none d-block"></span>
-                <a class="navbar-brand d-none d-lg-inline-block pl-5" href="#">
-                    <img src="img/logo.svg" width="104" height="38" alt="Alignit">
-                </a>
-                <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
-                    <img src="img/logo.svg" width="104" height="38" alt="Alignit">
-                </a>
-                <div class="w-100 text-right">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#alignNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+        <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="emailModalTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="text-center py-3">
+                            <!-- <img src="img/logo.svg" alt="Pavy" height="60px"> -->
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h3 class="text-teal text-center">Coming soon, sign up for updates</h3>
+                        <div class="col-12 pt-3 px-0">
+                            <div class="input-group">
+                                <span class="input-group-prepend">
+                                    <div class="input-group-text bg-transparent border-right-0 bg-white"><i
+                                            class="fa fa-envelope"></i></div>
+                                </span>
+                                <input class="form-control py-2 border-left-0 border" type="search" value="Email"
+                                    id="email-input">
+                                <span class="input-group-append">
+                                    <a href="#" class="btn-cta" type="button">SIGN UP</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="collapse navbar-collapse flex-grow-1 order-3" id="alignNavbar">
-                <ul class="navbar-nav ml-auto flex-nowrap d-flex justify-content-center">
-                    <li class="nav-item">
-                        <a href="#value" class="nav-link m-2 menu-item nav-active">SOLUTION</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#benefits" class="nav-link m-2 menu-item">BENEFITS & FEATURES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link m-2 menu-item">HOW IT WORKS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link m-2 menu-item">CLIENTS</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="d-flex flex-grow-1 justify-content-end">
-                <li class="nav-item">
-                    <button class="btn btn-outline-primary nav-link m-2 menu-item">LEARN MORE</button>
-                </li>
-            </div>
-        </nav> -->
+        </div>
     </header>
     <main id="main" role="main">
         <section id="hero" class="d-flex align-items-center justify-content-center">
             <div id="home" class="container-fluid text-left py-5 px-5">
                 <div class="row row-grid d-flex align-items-center text-left pt-5 flex-wrap">
                     <div class="col-12 col-lg-4 order-1 pb-5 px-1 order-1">
-                        <h1 class="py-3 text-center text-md-left cd-headline letters rotate-3">
-                            <span>Pavement asset management</span> 
-                        </br>
+                        <img id="hero-logo" class="mb-lg-5" src="img/logo/logo-poweredbyjacobs.svg" alt="Pavy">
+                        <h1 class="display-3 py-3 text-left text-md-left cd-headline letters type">
+                            <span>Pavement asset management,</span>
+                            </br>
                             <span class="cd-words-wrapper" style="width:200p">
-                                    <b class="is-visible" style="font-weight: 700;  font-style:normal">Simplified</b>
-                                    <b style="font-weight: 700;  font-style:normal">Visualised</b>
-                                    <b style="font-weight: 700;  font-style:normal">Optimised</b>
+                                <b class="is-visible" style="font-weight: 700;  font-style:normal">Simplified</b>
+                                <b style="font-weight: 700;  font-style:normal">Visualised</b>
+                                <b style="font-weight: 700;  font-style:normal">Optimised</b>
                             </span>
                         </h1>
-                        <h5 class="py-1 hero-text">Pavements are the most critical asset of any airport.</h5>
-                        <h5 class="py-1 hero-text">We put you in control to make the right decisions.</h5>
-                            <div class="col-12 pt-5 px-0">
-                                <div class="input-group">
-                                    <span class="input-group-prepend">
-                                        <div class="input-group-text bg-transparent border-right-0"><i class="fa fa-envelope"></i></div>
-                                    </span>
-                                    <input class="form-control py-2 border-left-0 border" type="search" value="Email" id="email-input">
-                                    <span class="input-group-append">
-                                        <a href="#" class="btn-cta">SIGN UP</a>
-                                  </span>
-                                </div>
+                        <h4 class="py-1">Cloud-based tools made by experts Jacobs.</br> The smart way to manage airport pavements and plan investment. </h4>
+                        <div class="col-12 pt-5 px-0">
+                                <h3 class="py-3 text-teal text-left">Coming soon, sign up for updates</h3>
+                            <div class="input-group">
+                                <span class="input-group-prepend">
+                                    <div class="input-group-text border-right-0 bg-white"><i class="fa fa-envelope"></i>
+                                    </div>
+                                </span>
+                                <input class="form-control py-2 border-left-0 border" type="search" value="Email"
+                                    id="email-input">
+                                <span class="input-group-append">
+                                    <a href="#" class="btn-cta">SIGN UP</a>
+                                </span>
                             </div>
+                        </div>
                     </div>
                     <div class="col-12 col-lg-8 d-flex align-items-center justify-content-center order-2">
                         <!--                             
@@ -151,163 +153,167 @@
                             <img class="img-fluid" src="img/grid-animation.svg" alt="Grid Animation" width="100%">
                         </div>
                     </div> -->
-
+                    <div class="row d-flex justify-content-between px-10rem py-5">
+                            <div class="col-12 col-md-6 col-lg-4 p-3 d-flex align-items-center justify-content-center">
+                                <img src="./img/logo/heathrow-logo.svg" alt="Heathrow" height="40px" width="auto"
+                                    style="margin:auto">
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 p-3 d-flex align-items-center justify-content-center">
+                                <img src="./img/logo/mag-logo.svg" alt="Manchester" height="60px" width="auto"
+                                    style="margin:auto">
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 p-3 d-flex align-items-center justify-content-center">
+                                <img src="./img/logo/gatwick-logo.svg" alt="Gatwick" height="40px" width="auto"
+                                    style="margin:auto">
+                            </div>
+                        </div>
             </div>
 
         </section>
 
-        <section id="socialproof">
-            <div class="container-fluid pb-5">
-                <div class="row d-flex align-items-center text-center pt-5">
-                    <div class="col-12">
-                        <h5>We work with the UK's busiest airports</h5>
-                    </div>
+        <!-- <section id="socialproof">
+            <div class="container-fluid py-3">
+                <div class="row d-flex align-items-center text-center">
                 </div>
-                <div class="row d-flex pt-5  justify-content-between px-10rem">
-                    <div class="col-12 col-md-6 col-lg-3 p-3 d-flex align-items-center justify-content-center">
+                <div class="row d-flex justify-content-between px-10rem">
+                    <div class="col-12 col-md-6 col-lg-4 p-3 d-flex align-items-center justify-content-center">
                         <img src="./img/logo/heathrow-logo.svg" alt="Heathrow" height="40px" width="auto"
                             style="margin:auto">
                     </div>
-                    <div class="col-12 col-md-6 col-lg-3 p-3 d-flex align-items-center justify-content-center">
+                    <div class="col-12 col-md-6 col-lg-4 p-3 d-flex align-items-center justify-content-center">
                         <img src="./img/logo/mag-logo.svg" alt="Manchester" height="60px" width="auto"
                             style="margin:auto">
                     </div>
-                    <div class="col-12 col-md-6 col-lg-3 p-3 d-flex align-items-center justify-content-center">
+                    <div class="col-12 col-md-6 col-lg-4 p-3 d-flex align-items-center justify-content-center">
                         <img src="./img/logo/gatwick-logo.svg" alt="Gatwick" height="40px" width="auto"
                             style="margin:auto">
                     </div>
-                    <div class="col-12 col-md-6 col-lg-3 p-3 d-flex align-items-center justify-content-center">
-                        <img src="./img/logo/stanstead-logo.svg" alt="Stanstead" height="60px" width="auto"
-                            style="margin:auto">
-                    </div>
                 </div>
-        </section>
-        <section id="solution">
-            <div class="container">
-                <div data-aos="fade-up" class="row d-flex align-items-center justify-content-around text-center pt-5">
-                    <div class="col-12 col-md-12 col-lg-6 pb-5 order-1">
+            </div>
+        </section> -->
+        <section id="howitworks">
+            <div class="container pb-5">
+                <div data-aos="fade-up" class="row d-flex align-items-center justify-content-center text-center pt-5">
+                    <div class="col-12">
+                        <h1 class="py-3">HOW IT WORKS</h1>
+                    </div>
+                    <div class="col-12 col-lg-10 text-center">
+                            <h3 class="py-3">Easy to use, self-serve tools that put you in control of managing your own airfield pavement maintenance and investment.</h3>
+                        </div>
+                </div>
+                <div data-aos="fade-up" class="row d-flex align-items-start text-center pt-5">
+                    <div class="col-12 col-md-6 col-lg-3 px-5 py-5 d-flex justify-content-center">
                         <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                            <img src="img/Manage-maintenance.png" alt="Manage Maintenance" height="auto" width="auto">
+                            <img src="img/Step1.png" height="180px" alt="Step 1">
+                            <div class="card-body">
+                                <!-- <img class="p-3" src="img/badge-1.svg" alt="1"> -->
+                                <h3 class="card-title text-teal">1. Upload PCI Data</h3>
+                            </div>
                         </div>
                     </div>
-                    <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000"
-                        class="col-12 col-md-12 col-lg-4 pb-5 text-left order-2">
-                        <h2>Forecast Performance</h2>
-                        <p>Understanding exactly how your pavement will behave is the key to planning. We help you apply
-                            deterioration rates to current pavement condition to predict future performance.</p>
-                    </div>
-                </div>
-                <div data-aos="fade-up" class="row d-flex align-items-center justify-content-around text-center pt-5">
-                    <div class="col-12 col-md-12 col-lg-6 pb-5 order-2">
-                        <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                            <img src="img/Deterioration.png" alt="Deterioration" height="auto" width="auto">
+                    <div class="col-12 col-md-6 col-lg-3 px-5 py-5 d-flex justify-content-center">
+                        <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                            <img src="img/Step2.png" height="180px" alt="Step 2">
+                            <div class="card-body">
+                                <!-- <img class="p-3" src="img/badge-2.svg" alt="2"> -->
+                                <h3 class="card-title text-teal">2. Set Parameters</h3>
+                            </div>
                         </div>
                     </div>
-                    <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000"
-                        class="col-12 col-md-12 col-lg-4 pb-5 text-left order-1">
-                        <h2>Manage Maintenance</h2>
-                        <p>Airfield pavements are complex and extensive. We give you the right information and insight
-                            to control where and how to maintain them.</p>
-                    </div>
-                </div>
-                <div data-aos="fade-up" class="row d-flex align-items-center justify-content-around text-center pt-5">
-                    <div class="col-12 col-md-12 col-lg-6 pb-5 order-1">
-                        <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                            <img src="img/Optimise-investment.png" alt="Optimise Investment" height="auto"
-                                width="auto">
+                    <div class="col-12 col-md-6 col-lg-3 px-5 py-5 d-flex justify-content-center">
+                        <div data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                            <img  src="img/Step3.png" height="180px" alt="Step 3">
+                            <div class="card-body">
+                                <!-- <img class="p-3" src="img/badge-3.svg" alt="3"> -->
+                                <h3 class="card-title text-teal">3. Run Models</h3>
+                            </div>
                         </div>
                     </div>
-                    <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000"
-                        class="col-12 col-md-12 col-lg-4 pb-5 text-left order-2">
-                        <h2>Optimise Investment</h2>
-                        <p>The key to asset management is balancing cost, risk and performance. We provide targeted
-                            investment plans to help you maximise your ROI.</p>
+                    <div class="col-12 col-md-6 col-lg-3 px-5 py-5 d-flex justify-content-center">
+                        <div data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                            <img  src="img/Step4.png" height="180px" alt="Step 4">
+                            <div class="card-body">
+                                <!-- <img class="p-3" src="img/badge-3.svg" alt="3"> -->
+                                <h3 class="card-title text-teal">4. Generate Reports</h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <div id="stats" class="container-fluid">
+        <section id="solution">
+            <div class="container">
+                <div data-aos="fade-up" class="row d-flex align-items-center justify-content-center text-center pt-5">
+                    <div class="col-12 col-md-12 col-lg-6 pb-5 text-left order-1 px-5">
+                        <h1>FORECAST PERFORMANCE</h1>
+                        <p>Understanding exactly how your pavement will behave is the key to planning. We help you apply deterioration rates to current pavement condition to predict future performance.</p>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-6 pb-5 text-left order-2 px-5">
+                        <img class="img-fluid" src="img/Manage-maintenance.png" alt="Manage Maintenance" height="auto" width="auto">
+                    </div>
+                </div>
+                <div data-aos="fade-up" class="row d-flex align-items-center justify-content-center text-center pt-5">
+                        <div class="col-12 col-md-12 col-lg-6 pb-5 text-left order-2 px-5">
+                                <img class="img-fluid" src="img/Deterioration.png" alt="Manage Maintenance" height="auto" width="auto">
+                            </div>
+                        <div class="col-12 col-md-12 col-lg-6 pb-5 text-left order-1 px-5">
+                            <h1>MANAGE MAINTENANCE</h1>
+                            <p>Airfield pavements are complex and extensive. We give you the right information and insight to control where and how to maintain them.</p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" class="row d-flex align-items-center justify-content-center text-center pt-5">
+                            <div class="col-12 col-md-12 col-lg-6 pb-5 text-left order-1 px-5">
+                                <h1>OPTIMISE INVESTMENT</h1>
+                                <p>The key to asset management is balancing cost, risk and performance. We provide targeted investment plans to help you maximise your ROI.</p>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-6 pb-5 text-left order-2 px-5">
+                                <img class="img-fluid" src="img/Stats.png" alt="Manage Maintenance" height="auto" width="auto">
+                            </div>
+                        </div>
+            </div>
+        </section>
+        <!-- <div id="stats" class="container-fluid">
             <div data-aos="fade-up" class="row d-flex align-items-center justify-content-center text-center py-5">
                 <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                     <img src="img/Stats.png" alt="Stats" height="400px" width="auto">
                 </div>
             </div>
-        </div>
+        </div> -->
         <section id="benfeat" data-aos="fade-up" data-aos-delay="300" data-aos-duration="600">
             <div id="benfeat-container" class="container py-5 px-5">
                 <div data-aos="fade-up" class="row d-flex align-items-center justify-content-center text-center pt-5">
-                    <div class="col-12 col-md-6 col-lg-6 pb-5">
-                        <h1 class="text-white">Key Features & Benefits</h1>
+                    <div class="col-12 pb-5">
+                        <h1 class="text-white">KEY FEATURES</h1>
                     </div>
+                    <div class="col-12 pb-5">
+                            <h3 class="text-white">Harness the power of your data and access world-class asset management expertise.</h3>
+                        </div>
                 </div>
                 <div data-aos="fade-up" class="row d-flex align-items-start justify-content-center pt-5">
-                    <div class="col-12 col-md-6 col-lg-6 pb-5 order-2">
+                    <div class="col-12 col-md-6 col-lg-6 pb-5 order-2 d-flex justify-content-center">
                         <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                            <ul>
-                                <li>Self-serve tools</li>
-                                <li>Secure data upload</li>
-                                <li>CapEx programmes </li>
-                                <li>Flexible treatment rates </li>
-                            </ul>
+                            <ol>
+                                <li> Securely upload data</li>
+                                <li> Set intervention thresholds</li>
+                                <li> Apply treatment rates</li>
+                                <li> Generate performance reports</li>
+                                <li> Create investment plans</li>
+                                <li> Produce CapEx programmes</li>
+                                <li> Visualise and map maintenance</li>
+                                <li> Optional consultancy support</li>
+                            </ol>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-6 pb-5 order-2">
+                    <!-- <div class="col-12 col-md-6 col-lg-6 pb-5 order-2">
                         <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                            <ul>
-                                <li>Performance reports</li>
-                                <li>Investment plans </li>
-                                <li>Customisable intervention thresholds </li>
-                                <li>Maps and visualisation</li>
-                            </ul>
+                            <ol>
+                                <li>Create investment plans</li>
+                                <li>Produce CapEx programmes</li>
+                                <li>Visualise and map maintenance</li>
+                                <li>Optional consultancy support</li>
+                            </ol>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="howitworks">
-            <div class="container-fluid pb-5">
-                <div data-aos="fade-up" class="row d-flex align-items-center text-center pt-5">
-                    <div class="col-12">
-                        <h1 class="py-3">How it works</h1>
-                    </div>
-                </div>
-                <div data-aos="fade-up" class="row d-flex align-items-start text-center pt-5">
-                    <div class="col-12 col-md-6 col-lg-3 pb-5">
-                        <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                            <img src="img/Step1.png" height="180px" alt="Step 1">
-                            <div class="card-body">
-                                <!-- <img class="p-3" src="img/badge-1.svg" alt="1"> -->
-                                <h3 class="card-title">1. Upload PCI Data</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3 pb-5">
-                        <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-                            <img src="img/Step2.png" height="180px" alt="Step 2">
-                            <div class="card-body">
-                                <!-- <img class="p-3" src="img/badge-2.svg" alt="2"> -->
-                                <h3 class="card-title">2. Set Parameters</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3 pb-5">
-                        <div data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
-                            <img src="img/Step3.png" height="180px" alt="Step 3">
-                            <div class="card-body">
-                                <!-- <img class="p-3" src="img/badge-3.svg" alt="3"> -->
-                                <h3 class="card-title">3. Run Models</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3 pb-5">
-                        <div data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
-                            <img src="img/Step4.png" height="180px" alt="Step 4">
-                            <div class="card-body">
-                                <!-- <img class="p-3" src="img/badge-3.svg" alt="3"> -->
-                                <h3 class="card-title">4. Generate Reports</h3>
-                            </div>
-                        </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -316,8 +322,7 @@
                 <div data-aos="fade-up" class="row d-flex align-items-center text-center pt-5">
                     <div class="col-12 col-lg-6 py-5 text-center text-lg-left">
                         <h1>Local Knowledge,</br>Global Expertise</h1>
-                        <h3 class="text-grey fw-300">Pavy has been tested in the UK; but is powered by a global network of aviation and asset
-                            management experts who have helped build the tool.</h3>
+                        <h3 class="text-grey fw-300">Pavy is powered by the expertise of a global community of aviation and asset management experts in Jacobs.</br> Trialled with UK airports, Pavy will soon be available to any airport around the world. </h3>
                     </div>
                     <div class="col-12 col-lg-6 py-5 text-center text-lg-left">
                         <img src="img/jacobs-map.svg" alt="Jacobs Map">
@@ -369,23 +374,25 @@
         <section id="cta-bot">
             <div class="container py-5" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
                 <div class="row d-flex justify-content-center">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center py-3">
-                        <img src="img/logo.svg" alt="Pavy" height="100px">
-                        <h5 class="pt-3 text-teal">Coming soon, sign up for updates</h5>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 text-center py-3">
+                        <img class="img-fluid" src="img/logo.svg" alt="Pavy" height="100px">
                     </div>
                 </div>
                 <div class="row d-flex justify-content-center">
-                        <div class="col-6 pt-5 px-0">
-                                <div class="input-group">
-                                    <span class="input-group-prepend">
-                                        <div class="input-group-text bg-transparent border-right-0"><i class="fa fa-envelope"></i></div>
-                                    </span>
-                                    <input class="form-control py-2 border-left-0 border" type="search" value="Email" id="email-input">
-                                    <span class="input-group-append">
-                                        <a href="#" class="btn-cta" type="button">SIGN UP</a>
-                                  </span>
+                    <div class="col-6 pt-5 px-0">
+                        <h3 class="py-3 text-teal text-center">Coming soon, sign up for updates</h3>
+                        <div class="input-group">
+                            <span class="input-group-prepend">
+                                <div class="input-group-text border-right-0 bg-white"><i class="fa fa-envelope"></i>
                                 </div>
-                            </div>
+                            </span>
+                            <input class="form-control py-2 border-left-0 border" type="search" value="Email"
+                                id="email-input">
+                            <span class="input-group-append">
+                                <a href="#" class="btn-cta" type="button">SIGN UP</a>
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

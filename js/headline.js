@@ -152,3 +152,15 @@ jQuery(document).ready(function($){
 		$newWord.removeClass('is-hidden').addClass('is-visible');
 	}
 });
+
+$(window).scroll(function() {
+    if ($(".navbar").offset().top > 300) {
+        $('#custom-nav').addClass('affix');
+        $(".navbar-fixed-top").addClass("top-nav-collapse");
+        $('.navbar-brand img').attr('src','./img/logo/logo-poweredbyjacobs.svg'); //change src
+    } else {
+        $('#custom-nav').removeClass('affix');
+        $(".navbar-fixed-top").removeClass("top-nav-collapse");
+        $('.navbar-brand img').attr('src','./img/logo/logo-placeholder.svg')
+    }   
+});
