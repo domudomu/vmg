@@ -159,7 +159,7 @@ body{
 #benfeat{
 	background-repeat:no-repeat;
     background-position: center center;
-	background-image: linear-gradient(to bottom right, #1D4682, #2960B1);
+	background-image: linear-gradient(to bottom right, #2960B1, #1D4682);
 	background-color: #1D4682;
 	min-height:100%;
 	color: #FFFFFF;
@@ -223,7 +223,7 @@ li .text-grey:on-hover{
 	color: #2962FF;
 }
 
-@media screen and ( max-width: 800px) {
+/* @media screen and ( max-width: 800px) {
     .order-1 {
         order: 1;
     }
@@ -233,7 +233,7 @@ li .text-grey:on-hover{
 	.order-3 {
         order: 3;
     }
-}
+} */
 
 .btn-cta {
 	font-family: 'Muli', sans-serif;
