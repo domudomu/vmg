@@ -35,45 +35,40 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <header>
-        <nav id="custom-nav" class="navbar navbar-light primary-color fixed-top justify-content-end">
-            <a class="navbar-brand" href="#">
-                    <img height="60px"> 
-            </a>
-            <!-- <a class="btn-cta ml-auto mr-3 order-lg-last" type="button" style="color:#FFFFFF;" data-toggle="modal"
-                data-target="#emailModal">SIGN UP</a> -->
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navDropdown"
-                aria-controls="navDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse text-right justify-content-end" id="navDropdown">
-                <ul class="navbar-nav">
-                        <li class="nav-item">
-                                <a class="nav-link" href="#main"><span class="sr-only">(current)</span>HOME</a>
+            <nav class="navbar navbar-expand-lg navbar-light primary-color fixed-top">
+                    <a class="navbar-brand" href="#main">
+                        <img src="img/logo/logo-poweredbyjacobs.svg" width="auto" height="60" alt="Pavy">
+                    </a>
+                    <a href="" class="btn-cta ml-auto mr-3 order-lg-last" type="button" data-toggle="modal"
+                    data-target="#emailModal"  style="-webkit-appearance: none">SIGN UP</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navDropdown"
+                        aria-controls="navDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <div class="collapse navbar-collapse d-flex justify-content-center justify-content-md-end text-md-right" id="navDropdown">
+                        <ul class="navbar-nav ">
+                    <div class="collapse navbar-collapse text-right justify-content-end" id="navDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#howitworks">How It Works</a>
                             </li>
-                        <li class="nav-item">
-                                <a class="nav-link" href="#howitworks">HOW IT WORKS</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#benefits">Benefits</a>
                             </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="#benefits">BENEFITS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#benfeat-container">FEATURES</a>
-                    </li>
-                    <li class="nav-item py-1">
-                            <a class="btn-cta order-lg-last" type="button" style="color:#FFFFFF;" data-toggle="modal"
-                            data-target="#emailModal">SIGN UP</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+                            <li class="nav-item">
+                                    <a class="nav-link" href="#features">Features</a>
+                                </li>
+                        </ul>
+                    </div>
+                </nav>
         <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="emailModalTitle"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <div class="text-center py-3">
-                            <!-- <img src="img/logo.svg" alt="Pavy" height="60px"> -->
+                    <div class="modal-header d-flex justify-content-center ">
+                        <div class="py-3  d-flex justify-content-center ">
+                            <img class=" d-flex justify-content-center " src="img/logo.svg" alt="Pavy" height="40px">
                         </div>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
@@ -86,7 +81,7 @@
                                 <input type="email" class="form-control required" id="modalEmail"
                                     aria-describedby="emailInput" placeholder="Email">
                                 <span class="input-group-append">
-                                    <a href="contact.html" class="btn-cta" type="button">SIGN UP</a>
+                                    <a href="contact.html" class="btn-cta" type="button"  style="-webkit-appearance: none">SIGN UP</a>
                                 </span>
                             </div>
                         </div>
@@ -97,10 +92,9 @@
     </header>
     <main id="main" role="main">
         <section id="hero" class="d-flex align-items-center justify-content-center">
-            <div id="home" class="container-fluid text-left py-5 px-5">
+            <div id="home" class="container-fluid text-left">
                 <div class="row row-grid d-flex align-items-center text-left pt-5 flex-wrap">
                     <div class="col-12 col-lg-4 order-1 pb-5 px-1 order-1">
-                        <img id="hero-logo" class="mb-lg-5" src="img/logo/logo-poweredbyjacobs.svg" alt="Pavy">
                         <h1 class="display-3 py-3 text-left text-md-left cd-headline letters type">
                             <span>Pavement asset management,</span>
                             </br>
@@ -148,7 +142,7 @@
                             <img class="img-fluid" src="img/grid-animation.svg" alt="Grid Animation" width="100%">
                         </div>
                     </div> -->
-                    <div class="row d-flex justify-content-between py-5 my-5">
+                    <div class="row d-flex justify-content-between py-5">
                             <div class="col-12 col-md-4 col-lg-4 p-3 d-flex align-items-center justify-content-center">
                                 <img src="./img/logo/heathrow-logo.png" alt="Heathrow" height="40px" width="auto"
                                     style="margin:auto">
@@ -193,7 +187,7 @@
                         <h1 class="display-3 py-3">How It Works</h1>
                     </div>
                     <div class="col-12 col-lg-10 text-center">
-                            <h3 class="text-darkgrey py-3">Easy to use, self-serve tools that put you in control of managing your own airfield pavement maintenance and investment.</h3>
+                            <h3 class="text-darkgrey py-3 text-center">Easy to use, self-serve tools that put you in control of managing your own airfield pavement maintenance and investment.</h3>
                         </div>
                 </div>
                 <div data-aos="fade-up" class="row d-flex align-items-start text-center pt-5">
@@ -242,7 +236,7 @@
         </section>
         <section id="benefits">
             <div class="container">
-                    <div data-aos="fade-up" class="row d-flex align-items-center justify-content-center text-center py-5">
+                    <div data-aos="fade-up" class="row d-flex align-items-center justify-content-center text-center py-3">
                             <div class="col-12">
                                 <h1 class="display-3 py-3">Key Benefits</h1>
                             </div>
@@ -251,34 +245,34 @@
                                 </div>
                         </div>
                 <div data-aos="fade-up" class="row d-flex align-items-center justify-content-center text-center py-5">
-                    <div class="col-12 col-md-12 col-lg-6 pb-5 text-left order-1 px-5">
+                    <div class="col-12 col-md-12 col-lg-6 text-left order-1 px-5">
                         <h1>FORECAST PERFORMANCE</h1>
                         <p>Understanding exactly how your pavement will behave is the key to planning. We help you apply deterioration rates to current pavement condition to predict future performance.</p>
                     </div>
-                    <div class="col-12 col-md-8 col-lg-6 pb-5 text-left order-2 px-5">
+                    <div class="col-12 col-md-8 col-lg-6 text-left order-2 px-5">
                         <img class="img-fluid" src="img/forecast.svg" alt="Forecast Performance" height="auto" width="auto">
                     </div>
                 </div>
                 <div data-aos="fade-up" class="row d-flex align-items-center justify-content-center text-center py-5">
-                        <div class="col-12 col-md-12 col-lg-6 pb-5 text-left order-sm-1 order-md-1 order-lg-2  px-5">
+                        <div class="col-12 col-md-12 col-lg-6 text-left order-sm-1 order-md-1 order-lg-2  px-5">
                                 <h1>MANAGE MAINTENANCE</h1>
                                 <p>Airfield pavements are complex and extensive. We give you the right information and insight to control where and how to maintain them.</p>
                             </div>
-                            <div class="col-12 col-md-8 col-lg-6 pb-5 text-left order-sm-2 order-md-1 order-lg-1 px-5">
+                            <div class="col-12 col-md-8 col-lg-6 text-left order-sm-2 order-md-1 order-lg-1 px-5">
                                     <img class="img-fluid" src="img/manage-maintenance.svg" alt="Manage Maintenance" height="auto" width="auto">
                                 </div>
                     </div>
-                    <div data-aos="fade-up" class="row d-flex align-items-center justify-content-center text-center py-5">
-                            <div class="col-12 col-md-12 col-lg-6 pb-5 text-left order-1 px-5">
+                    <div data-aos="fade-up" class="row d-flex align-items-center justify-content-center text-center">
+                            <div class="col-12 col-md-12 col-lg-6 text-left order-1 px-5">
                                 <h1>OPTIMISE INVESTMENT</h1>
                                 <p>The key to asset management is balancing cost, risk and performance. We provide targeted investment plans to help you maximise your ROI.</p>
                             </div>
-                            <div class="col-12 col-md-8 col-lg-6 pb-5 text-left order-2 px-5">
+                            <div class="col-12 col-md-8 col-lg-6 text-left order-2 px-5">
                                 <img class="img-fluid" src="img/optimise-investment.svg" alt="Optimise Investment" height="auto" width="auto">
                             </div>
                         </div>
             </div>
-            <div id="benfeat-container" class="container py-5 px-5">
+            <div id="features" class="container py-5 px-5">
                     <div data-aos="fade-up" class="row d-flex align-items-center justify-content-start text-center pt-5">
                         <div class="col-12 col-md-12 col-lg-8 pb-5">
                             <h1 class="text-left display-3">Key Features</h1>
@@ -407,12 +401,12 @@
                     <div class="col-10 col-md-8 col-lg-6 px-0">
                         <h3 class="py-3 text-darkblue text-center">Coming soon, be the first to try it</h3>
                         <div class="input-group">
-                            <input type="email" class="form-control required" id="emailcta"
-                                    aria-describedby="emailcta" placeholder="Email">
-                            <span class="input-group-append">
-                                <a href="contact.html" class="btn-cta" type="button">SIGN UP</a>
-                            </span>
-                        </div>
+                                <input type="email" class="form-control required" id="modalEmail"
+                                    aria-describedby="emailInput" placeholder="Email">
+                                <span class="input-group-append">
+                                    <a href="contact.html" class="btn-cta" type="button" style="-webkit-appearance: none">SIGN UP</a>
+                                </span>
+                            </div>
                     </div>
                 </div>
             </div>
