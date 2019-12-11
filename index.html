@@ -48,14 +48,17 @@
 
             <div class="collapse navbar-collapse text-right justify-content-end" id="navDropdown">
                 <ul class="navbar-nav">
-                        <li class="nav-item active">
-                                <a class="nav-link" href="#howitworks"><span class="sr-only">(current)</span>HOW IT WORKS</a>
+                        <li class="nav-item">
+                                <a class="nav-link" href="#main"><span class="sr-only">(current)</span>HOME</a>
+                            </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="#howitworks">HOW IT WORKS</a>
                             </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="#solution">SOLUTION</a>
+                        <a class="nav-link" href="#benefits">BENEFITS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#benfeat">KEY FEATURES</a>
+                        <a class="nav-link" href="#benfeat-container">FEATURES</a>
                     </li>
                     <li class="nav-item py-1">
                             <a class="btn-cta order-lg-last" type="button" style="color:#FFFFFF;" data-toggle="modal"
@@ -77,15 +80,11 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <h3 class="text-darkblue text-center">PAVY is coming soon, be the first to try it</h3>
+                        <h3 class="text-darkblue text-center">PAVY is coming soon,</br> be the first to try it</h3>
                         <div class="col-12 pt-3 px-0">
                             <div class="input-group">
-                                <span class="input-group-prepend">
-                                    <div class="input-group-text bg-transparent border-right-0 bg-white"><i
-                                            class="fa fa-envelope"></i></div>
-                                </span>
-                                <input class="form-control py-2 border-left-0 border" type="search" value="Email"
-                                    id="email-input">
+                                <input type="email" class="form-control required" id="modalEmail"
+                                    aria-describedby="emailInput" placeholder="Email">
                                 <span class="input-group-append">
                                     <a href="contact.html" class="btn-cta" type="button">SIGN UP</a>
                                 </span>
@@ -115,12 +114,8 @@
                         <div class="col-12 pt-5 px-0">
                                 <h3 class="py-3 text-darkblue text-left">PAVY is coming soon, be the first to try it</h3>
                             <div class="input-group">
-                                <span class="input-group-prepend">
-                                    <div class="input-group-text border-right-0 bg-white"><i class="fa fa-envelope"></i>
-                                    </div>
-                                </span>
-                                <input class="form-control py-2 border-left-0 border" type="search" value="Email"
-                                    id="email-input">
+                                <input type="email" class="form-control required" id="emailcta"
+                                    aria-describedby="emailcta" placeholder="Email">
                                 <span class="input-group-append">
                                     <a href="contact.html" class="btn-cta">SIGN UP</a>
                                 </span>
@@ -195,47 +190,51 @@
             <div class="container pb-5">
                 <div data-aos="fade-up" class="row d-flex align-items-center justify-content-center text-center pt-5">
                     <div class="col-12">
-                        <h1 class="py-3">HOW IT WORKS</h1>
+                        <h1 class="display-3 py-3">How It Works</h1>
                     </div>
                     <div class="col-12 col-lg-10 text-center">
-                            <h3 class="py-3">Easy to use, self-serve tools that put you in control of managing your own airfield pavement maintenance and investment.</h3>
+                            <h3 class="text-darkgrey py-3">Easy to use, self-serve tools that put you in control of managing your own airfield pavement maintenance and investment.</h3>
                         </div>
                 </div>
                 <div data-aos="fade-up" class="row d-flex align-items-start text-center pt-5">
                     <div class="col-12 col-md-6 col-lg-3 px-5 py-5 d-flex justify-content-center">
                         <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                            <img src="img/Step1.png" height="180px" alt="Step 1">
-                            <div class="card-body">
-                                <!-- <img class="p-3" src="img/badge-1.svg" alt="1"> -->
-                                <h3 class="card-title text-teal">1. Upload PCI Data</h3>
-                            </div>
+                                <div class="card-body">
+                                        <!-- <img class="p-3" src="img/badge-1.svg" alt="1"> -->
+                                        <h3 class="card-title text-darkblue">1. UPLOAD PCI DATA</h3>
+                                    </div>
+                            <img class="zoom" src="img/Step1.png" height="180px" alt="Step 1">
+                            
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-3 px-5 py-5 d-flex justify-content-center">
                         <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-                            <img src="img/Step2.png" height="180px" alt="Step 2">
-                            <div class="card-body">
-                                <!-- <img class="p-3" src="img/badge-2.svg" alt="2"> -->
-                                <h3 class="card-title text-teal">2. Set Parameters</h3>
-                            </div>
+                                <div class="card-body">
+                                        <!-- <img class="p-3" src="img/badge-2.svg" alt="2"> -->
+                                        <h3 class="card-title text-darkblue">2. SET PARAMETERS</h3>
+                                    </div>
+                            <img class="zoom" src="img/Step2.png" height="180px" alt="Step 2">
+                            
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-3 px-5 py-5 d-flex justify-content-center">
                         <div data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
-                            <img  src="img/Step3.png" height="180px" alt="Step 3">
-                            <div class="card-body">
-                                <!-- <img class="p-3" src="img/badge-3.svg" alt="3"> -->
-                                <h3 class="card-title text-teal">3. Run Models</h3>
-                            </div>
+                                <div class="card-body">
+                                        <!-- <img class="p-3" src="img/badge-3.svg" alt="3"> -->
+                                        <h3 class="card-title text-darkblue">3. RUN MODELS</h3>
+                                    </div>
+                            <img  class="zoom" src="img/Step3.png" height="180px" alt="Step 3">
+                            
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-3 px-5 py-5 d-flex justify-content-center">
                         <div data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
-                            <img  src="img/Step4.png" height="180px" alt="Step 4">
-                            <div class="card-body">
-                                <!-- <img class="p-3" src="img/badge-3.svg" alt="3"> -->
-                                <h3 class="card-title text-teal">4. Generate Reports</h3>
-                            </div>
+                                <div class="card-body">
+                                        <!-- <img class="p-3" src="img/badge-3.svg" alt="3"> -->
+                                        <h3 class="card-title text-darkblue">4. GENERATE REPORTS</h3>
+                                    </div>
+                            <img class="zoom"  src="img/Step4.png" height="180px" alt="Step 4">
+                            
                         </div>
                     </div>
                 </div>
@@ -243,57 +242,87 @@
         </section>
         <section id="benefits">
             <div class="container">
-                    <div data-aos="fade-up" class="row d-flex align-items-center justify-content-center text-center pt-5">
+                    <div data-aos="fade-up" class="row d-flex align-items-center justify-content-center text-center py-5">
                             <div class="col-12">
-                                <h1 class="py-3">KEY BENEFITS</h1>
+                                <h1 class="display-3 py-3">Key Benefits</h1>
                             </div>
-                            <div class="col-12 col-lg-10 text-center">
-                                    <h3 class="py-3">Harness the power of your data and access world-class asset management expertise.</h3>
+                            <div class="col-10 col-lg-7 text-center">
+                                    <h3 class="text-darkgrey py-3">Harness the power of your data and access world-class asset management expertise.</h3>
                                 </div>
                         </div>
-                <div data-aos="fade-up" class="row d-flex align-items-center justify-content-center text-center pt-5">
+                <div data-aos="fade-up" class="row d-flex align-items-center justify-content-center text-center py-5">
                     <div class="col-12 col-md-12 col-lg-6 pb-5 text-left order-1 px-5">
                         <h1>FORECAST PERFORMANCE</h1>
                         <p>Understanding exactly how your pavement will behave is the key to planning. We help you apply deterioration rates to current pavement condition to predict future performance.</p>
                     </div>
                     <div class="col-12 col-md-8 col-lg-6 pb-5 text-left order-2 px-5">
-                        <img class="img-fluid" src="img/Manage-maintenance.png" alt="Manage Maintenance" height="auto" width="auto">
+                        <img class="img-fluid" src="img/forecast.svg" alt="Forecast Performance" height="auto" width="auto">
                     </div>
                 </div>
-                <div data-aos="fade-up" class="row d-flex align-items-center justify-content-center text-center pt-5">
+                <div data-aos="fade-up" class="row d-flex align-items-center justify-content-center text-center py-5">
                         <div class="col-12 col-md-12 col-lg-6 pb-5 text-left order-sm-1 order-md-1 order-lg-2  px-5">
                                 <h1>MANAGE MAINTENANCE</h1>
                                 <p>Airfield pavements are complex and extensive. We give you the right information and insight to control where and how to maintain them.</p>
                             </div>
                             <div class="col-12 col-md-8 col-lg-6 pb-5 text-left order-sm-2 order-md-1 order-lg-1 px-5">
-                                    <img class="img-fluid" src="img/Deterioration.png" alt="Manage Maintenance" height="auto" width="auto">
+                                    <img class="img-fluid" src="img/manage-maintenance.svg" alt="Manage Maintenance" height="auto" width="auto">
                                 </div>
                     </div>
-                    <div data-aos="fade-up" class="row d-flex align-items-center justify-content-center text-center pt-5">
+                    <div data-aos="fade-up" class="row d-flex align-items-center justify-content-center text-center py-5">
                             <div class="col-12 col-md-12 col-lg-6 pb-5 text-left order-1 px-5">
                                 <h1>OPTIMISE INVESTMENT</h1>
                                 <p>The key to asset management is balancing cost, risk and performance. We provide targeted investment plans to help you maximise your ROI.</p>
                             </div>
                             <div class="col-12 col-md-8 col-lg-6 pb-5 text-left order-2 px-5">
-                                <img class="img-fluid" src="img/Stats.png" alt="Manage Maintenance" height="auto" width="auto">
+                                <img class="img-fluid" src="img/optimise-investment.svg" alt="Optimise Investment" height="auto" width="auto">
                             </div>
                         </div>
             </div>
-        </section>
-        <section id="benfeat" data-aos="fade-up" data-aos-delay="300" data-aos-duration="600">
             <div id="benfeat-container" class="container py-5 px-5">
-                <div data-aos="fade-up" class="row d-flex align-items-center justify-content-center text-center pt-5">
-                    <div class="col-12 pb-5">
-                        <h1 class="text-white">KEY FEATURES</h1>
-                    </div>
-                    <div class="col-12 pb-5">
-                            <h3 class="text-white">Harness the power of your data and access world-class asset management expertise.</h3>
+                    <div data-aos="fade-up" class="row d-flex align-items-center justify-content-start text-center pt-5">
+                        <div class="col-12 col-md-12 col-lg-8 pb-5">
+                            <h1 class="text-left display-3">Key Features</h1>
+                            <h3 class="text-left py-3">Flexible tools to help you make you make the right
+                                    decisions and communicate with your team.</h3>
                         </div>
+                    </div>
+                    <div data-aos="fade-up" class="row d-flex align-items-start pt-5">
+                        <div class="col-12 col-md-12 col-lg-6 pb-5 order-1 d-flex  justify-content-between ">
+                            <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                                <ul class="text-left">
+                                    <li> Securely upload data</li>
+                                    <li> Set intervention thresholds</li>
+                                    <li> Apply treatment rates</li>
+                                    <li> Generate performance reports</li>
+                                    <li> Create investment plans</li>
+                                    <li> Produce CapEx programmes</li>
+                                    <li> Visualise and map maintenance</li>
+                                    <li> Optional consultancy support</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-6 pb-5 order-2 d-flex justify-content-start">
+                                <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                                    <img src="img/ui-mockup.png" alt="UI Mockup" class="img-fluid">
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!-- <section id="benfeat" data-aos="fade-up" data-aos-delay="300" data-aos-duration="600">
+            <div id="benfeat-container" class="container py-5 px-5">
+                <div data-aos="fade-up" class="row d-flex align-items-center justify-content-start text-center pt-5">
+                    <div class="col-12 col-md-12 col-lg-8 pb-5">
+                        <h1 class="text-white text-left display-3">Key Features</h1>
+                        <h3 class="text-white text-left py-3">Flexible tools to help you make you make the right
+                                decisions and communicate with your team.</h3>
+                    </div>
                 </div>
                 <div data-aos="fade-up" class="row d-flex align-items-start justify-content-center pt-5">
-                    <div class="col-12 col-md-12 col-lg-6 pb-5 order-2 d-flex justify-content-center">
+                    <div class="col-12 col-md-12 col-lg-6 pb-5 order-2 d-flex justify-content-start">
                         <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                            <ol>
+                            <ul class="text-left">
                                 <li> Securely upload data</li>
                                 <li> Set intervention thresholds</li>
                                 <li> Apply treatment rates</li>
@@ -302,28 +331,23 @@
                                 <li> Produce CapEx programmes</li>
                                 <li> Visualise and map maintenance</li>
                                 <li> Optional consultancy support</li>
-                            </ol>
+                            </ul>
                         </div>
                     </div>
-                    <!-- <div class="col-12 col-md-6 col-lg-6 pb-5 order-2">
-                        <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                            <ol>
-                                <li>Create investment plans</li>
-                                <li>Produce CapEx programmes</li>
-                                <li>Visualise and map maintenance</li>
-                                <li>Optional consultancy support</li>
-                            </ol>
+                    <div class="col-12 col-md-12 col-lg-6 pb-5 order-2 d-flex justify-content-start">
+                            <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                                <img src="img/ui-mockup.png" alt="UI Mockup" class="img-fluid">
+                            </div>
                         </div>
-                    </div> -->
                 </div>
             </div>
-        </section>
-        <section>
+        </section> -->
+        <section id="testimonials">
             <div class="container pb-5">
                 <div data-aos="fade-up" class="row d-flex align-items-center text-center pt-5">
                     <div class="col-12 col-lg-6 py-5 text-center text-lg-left">
-                        <h1>Local Knowledge,</br>Global Expertise</h1>
-                        <h3 class="text-grey fw-300">Pavy is powered by the expertise of a global community of aviation and asset management experts in Jacobs.</br> Trialled with UK airports, Pavy will soon be available to any airport around the world. </h3>
+                        <h1 class="display-4 text-white pb-3">Local Knowledge,</br>Global Expertise</h1>
+                        <h3 class="text-white fw-300">Pavy is powered by the expertise of a global community of aviation and asset management experts in Jacobs.</br> Trialled with UK airports, Pavy will soon be available to any airport around the world. </h3>
                     </div>
                     <div class="col-12 col-lg-6 py-5 text-center text-lg-left">
                         <img src="img/jacobs-map.svg" alt="Jacobs Map">
@@ -375,20 +399,16 @@
         <section id="cta-bot">
             <div class="container py-5" >
                 <div data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000" class="row d-flex justify-content-center">
-                    <div class="col-xs-12 col-sm-12 col-md-10 col-lg-6 text-center py-3">
+                    <div class="col-xs-12 col-sm-12 col-md-10 col-lg-3 text-center py-3">
                         <img class="img-fluid" src="img/logo.svg" alt="Pavy" height="100px">
                     </div>
                 </div>
                 <div class="row d-flex justify-content-center">
-                    <div class="col-10 col-md-8 col-lg-6 pt-5 px-0">
-                        <h3 class="py-3 text-darkblue text-center">PAVY is coming soon, be the first to try it</h3>
+                    <div class="col-10 col-md-8 col-lg-6 px-0">
+                        <h3 class="py-3 text-darkblue text-center">Coming soon, be the first to try it</h3>
                         <div class="input-group">
-                            <span class="input-group-prepend">
-                                <div class="input-group-text border-right-0 bg-white"><i class="fa fa-envelope"></i>
-                                </div>
-                            </span>
-                            <input class="form-control py-2 border-left-0 border" type="search" value="Email"
-                                id="email-input">
+                            <input type="email" class="form-control required" id="emailcta"
+                                    aria-describedby="emailcta" placeholder="Email">
                             <span class="input-group-append">
                                 <a href="contact.html" class="btn-cta" type="button">SIGN UP</a>
                             </span>
