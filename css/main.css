@@ -282,9 +282,6 @@ li .text-grey:on-hover{
 	transition-property: color;
 	-webkit-transition-duration: 0.3s;
 	transition-duration: 0.3s;
-		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-		transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-		border-radius: 0.25rem;
   }
   .btn-cta:before {
 	content: "";
@@ -309,7 +306,6 @@ li .text-grey:on-hover{
   }
   .btn-cta:hover, .btn-cta:focus, .btn-cta:active {
 	color: white;
-	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   }
   .btn-cta:hover:before, .btn-cta:focus:before, .btn-cta:active:before {
 	-webkit-transform: scaleX(1);
@@ -329,9 +325,6 @@ li .text-grey:on-hover{
 	transition-property: color;
 	-webkit-transition-duration: 0.3s;
 	transition-duration: 0.3s;
-		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-		transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-		border-radius: 0.25rem;
   }
   .btn-secondary:before {
 	content: "";
@@ -356,7 +349,6 @@ li .text-grey:on-hover{
   }
   .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
 	color: white;
-	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   }
   .btn-secondary:hover:before, .btn-secondary:focus:before, .btn-secondary:active:before {
 	-webkit-transform: scaleX(1);
@@ -420,7 +412,7 @@ li .text-grey:on-hover{
   
 	padding: 1em;
 	cursor: pointer;
-	background: #FFFFFF;
+	background: #ECEFF1;
 	text-decoration: none;
 	color: #A42051;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
