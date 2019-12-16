@@ -32,10 +32,17 @@ body{
 	/* background-position-y: 30px; */
 }
 @media only screen and (max-width: 900px) {
-	#hero {
-		background-position-y: 230px;
-	}
-  }
+    #hero {
+        background: url(../img/pavy-mobile-background.svg);
+        background-size: cover;
+        background-position: center;
+    }
+}
+@media screen and (min-width: 900px) {
+    .hidden-hero {
+        display: none;
+    }
+}
 #hero h1{
 	/* font-size: 60px; */
 	color: #1D4682;
@@ -95,7 +102,7 @@ body{
     background-size: cover;
 	background-position: center;
 	padding-top: 5rem;
-	padding-bottom:10rem;
+	padding-bottom:5rem;
 	background-repeat: no-repeat;
 	/* background-position-y: 30px; */
 }
@@ -664,7 +671,7 @@ xtype
 	-o-transform: translateY(-50%);
 	transform: translateY(-50%);
 	height: 90%;
-	width: 1px;
+	width: 2px;
 	background-color: #aebcb9;
   }
   .cd-headline.type .cd-words-wrapper.waiting::after {
@@ -1045,16 +1052,21 @@ footer{
   }
 
   #nav-logo{
-	  min-height: 30px;
+	  min-width: 100px;
   }
 
   @media only screen and (min-width: 700px) {
 	#nav-logo{
-		height: 60px;
+		width: 120px;
 	}
   }
   @media only screen and (max-width: 500px) {
 	#nav-logo{
-		min-height: 40px;
+		min-width: 100px;
 	}
   }
+@media only screen and (max-width: 350px) {
+    #nav-logo {
+        min-width: 80px;
+    }
+}
