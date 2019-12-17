@@ -43,7 +43,7 @@
         <![endif]-->
        <header>
         <nav class="navbar navbar-expand-lg navbar-light primary-color fixed-top">
-            <a class="navbar-brand" href="index.aspx">
+            <a class="navbar-brand" href="index.html">
                 <img class="img-fluid" id="nav-logo" src="img/logo/logo-poweredbyjacobs.svg" alt="Pavy">
             </a>
             <a href="" class="btn-cta ml-auto mr-3 order-lg-last" type="button" data-toggle="modal"
@@ -101,6 +101,16 @@
         <main id="main" role="main">
             <section id="contact-main">
                 <div class="d-flex align-items-center">
+                    <div class="modal fade success-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                          <div class="modal-content p-5 m-auto d-flex justify-content-center">
+                              <div><h1 class="text-center">Thank you, we will be in touch soon!</h1></div>
+                              <div class="d-flex justify-content-center"> 
+                            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg>
+                        </div>
+                          </div>
+                        </div>
+                      </div>
                     <div class="container pt-5">
                             <div class="row py-5">
                                     <div class="col-12 d-flex justify-content-center">
@@ -110,12 +120,12 @@
                         <div class="row d-flex justify-content-center" >
                         <form class="col-12 col-md-8 col-lg-6">
                             <div class="form-group">
-                                <label class="text-darkblue" for="exampleInputEmail1">Name</label>
+                                <label class="text-darkblue" for="exampleInputEmail1">Name<a style="color: red"> *</a></label>
                                 <input type="text" class="form-control required" id="Name"
                                     aria-describedby="emailHelp" placeholder="Name">
                             </div>
                             <div class="form-group">
-                                <label class="text-darkblue" for="exampleInputPassword1">Email</label>
+                                <label class="text-darkblue" for="exampleInputPassword1">Email<a style="color: red"> *</a></label>
                                 <input type="email" class="form-control" id="Email"
                                     placeholder="Email" runat="server" >
                             </div>
@@ -140,9 +150,12 @@
                                     placeholder="Role">
                             </div>
                             <div class="col-12 pt-3 d-flex justify-content-between">
-                                <span><a href="index.aspx" class="btn-secondary text-center" >Back</a></span>
+                                <span><a href="index.html" class="btn-secondary text-center" >Back</a></span>
                                 <span><a href="javascript:{};" onclick="SaveForm();"
-                                        class="btn-cta text-center">REGISTER</a></span>
+                                        class="btn-cta text-center" data-toggle="modal" data-target=".success-modal">REGISTER</a></span>
+                            </div>
+                            <div class="col-12 pt-3 d-flex justify-content-center">
+                                <p class="text-muted text-small">By signing up you agree to our <a href="privacy.html">Privacy Terms</a></p>
                             </div>
                         </form>
                     </div>
@@ -163,7 +176,7 @@
                                         <img class="px-1" src="img/jacobs-logo-white.svg" width="80" height="auto"
                                             alt="Jacobs" target="_blank" href="https://www.jacobs.com">
                                     </div> -->
-                                    <p>Developed & Owned by Jacobs®</p>
+                                    <p>Developed by Jacobs®</p>
                                 </div>
                                 <div class="col-md-6 px-4" style="border-right: solid white 1px">
                                     <h6 style="font-weight: bold"> About Jacobs</h6>

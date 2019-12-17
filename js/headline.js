@@ -7,11 +7,11 @@ jQuery(document).ready(function($){
 		//letters effect
 		lettersDelay = 50,
 		//type effect
-		typeLettersDelay = 150,
-		selectionDuration = 500,
+		typeLettersDelay = 50,
+		selectionDuration = 800,
 		typeAnimationDelay = selectionDuration,
 		//clip effect 
-		revealDuration = 600,
+		revealDuration = 500,
 		revealAnimationDelay = 1500;
 	
 	initHeadline();
@@ -71,9 +71,8 @@ jQuery(document).ready(function($){
 		
 		if($word.parents('.cd-headline').hasClass('type')) {
 			var parentSpan = $word.parent('.cd-words-wrapper');
-			parentSpan.addClass('selected').removeClass('waiting');	
+			parentSpan.removeClass('waiting');	
 			setTimeout(function(){ 
-				parentSpan.removeClass('selected'); 
 				$word.removeClass('is-visible').addClass('is-hidden').children('i').removeClass('in').addClass('out');
 			}, selectionDuration);
 			setTimeout(function(){ showWord(nextWord, typeLettersDelay) }, typeAnimationDelay);
