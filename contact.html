@@ -118,8 +118,43 @@
                                     </div>
                                 </div>
                         <div class="row d-flex justify-content-center" >
-                        <form class="col-12 col-md-8 col-lg-6">
+                        <form class="col-12 col-md-8 col-lg-6" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                            <div hidden aria-hidden="true">
+                                <label>
+                                  Don’t fill this out if you're human: 
+                                  <input name="bot-field" />
+                                </label>
+                              </div>
+                              <div class="form-group">
+                                <label class="text-darkblue" for="exampleInputEmail1">Name<a style="color: red"> *</a></label>
+                                <input type="text" class="form-control required" id="Name"
+                                    aria-describedby="emailHelp" placeholder="Name">
+                            </div>
                             <div class="form-group">
+                                <label class="text-darkblue" for="exampleInputPassword1">Email<a style="color: red"> *</a></label>
+                                <input type="email" name="email" placeholder="Email"  id="email" class="form-control required" required />
+                            </div>
+                            <div class="form-group">
+                                <label class="text-darkblue" for="exampleInputPassword1">Phone</label>
+                                <input type="phone" class="form-control" id="Phone"
+                                    placeholder="Phone">
+                            </div>
+                            <div class="form-group">
+                                <label class="text-darkblue" for="exampleInputPassword1">Airport</label>
+                                <input type="text" class="form-control" id="Airport"
+                                    placeholder="Airport">
+                            </div>
+                            <div class="form-group">
+                                <label class="text-darkblue" for="exampleInputPassword1">Country</label>
+                                <input type="text" class="form-control" id="Country"
+                                    placeholder="Country">
+                            </div>
+                            <div class="form-group">
+                                <label class="text-darkblue" for="exampleInputPassword1">Role</label>
+                                <input type="text" class="form-control" id="Role"
+                                    placeholder="Role">
+                            </div>
+                            <!-- <div class="form-group">
                                 <label class="text-darkblue" for="exampleInputEmail1">Name<a style="color: red"> *</a></label>
                                 <input type="text" class="form-control required" id="Name"
                                     aria-describedby="emailHelp" placeholder="Name">
@@ -148,11 +183,11 @@
                                 <label class="text-darkblue" for="exampleInputPassword1">Role</label>
                                 <input type="text" class="form-control" id="Role"
                                     placeholder="Role">
-                            </div>
+                            </div> -->
                             <div class="col-12 pt-3 d-flex justify-content-between">
                                 <span><a href="index.html" class="btn-secondary text-center" >Back</a></span>
                                 <span><a href="javascript:{};" onclick="SaveForm();"
-                                        class="btn-cta text-center" data-toggle="modal" data-target=".success-modal">REGISTER</a></span>
+                                        class="btn-cta text-center" data-toggle="modal" data-target=".success-modal" type="submit">REGISTER</a></span>
                             </div>
                             <div class="col-12 pt-3 d-flex justify-content-center">
                                 <p class="text-muted text-small">By signing up you agree to our <a href="privacy.html">Privacy Terms</a></p>

@@ -39,8 +39,9 @@
             <a class="navbar-brand" href="index.html">
                 <img class="img-fluid" id="nav-logo" src="img/logo/logo-poweredbyjacobs.svg" alt="Pavy">
             </a>
-            <a href="" class="btn-cta ml-auto mr-3 order-lg-last text-nowrap" type="button" data-toggle="modal"
-                data-target="#emailModal" style="-webkit-appearance: none">SIGN UP</a>
+            <!-- <a href="" class="btn-cta ml-auto mr-3 order-lg-last text-nowrap" type="button" data-toggle="modal"
+                data-target="#emailModal" style="-webkit-appearance: none">SIGN UP</a> -->
+                <a href="contact.html"" class="btn-cta ml-auto mr-3 order-lg-last text-nowrap" type="button" style="-webkit-appearance: none">SIGN UP</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navDropdown"
                 aria-controls="navDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -74,7 +75,7 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body">
+                    <!-- <div class="modal-body">
                         <h3 class="text-darkblue text-center">PAVY is coming soon,</br> be the first to try it</h3>
                         <div class="col-12 pt-3 px-0">
                             <div class="input-group">
@@ -88,7 +89,7 @@
                         <div class="col-12 pt-3">
                             <p class="text-center text-muted text-disclaimer">By signing up you agree to Jacobs <a href="privacy.html">Privacy Terms</a></p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -111,13 +112,18 @@
                         <h4 class="py-1">Introducing the cloud-based platform made by experts at Jacobs. The smart way to manage airport pavements and plan investment.</h4>
                         <div class="col-12 pt-5 px-0">
                             <h3 class="py-3 text-darkblue text-left text-lg-nowrap">PAVY is coming soon, be the first to try it</h3>
-                            <div class="input-group">
+                            <div class="input-group col-sm-12 col-md-6 col-lg-5" style="padding: 0px; display: block">
+                                <span class="input-group-append">
+                                    <a href="contact.html" class="btn-cta btn-block text-center">SIGN UP</a>
+                                </span>
+                            </div>
+                            <!-- <div class="input-group">
                                 <input type="email" class="form-control required" id="emailcta"
                                     aria-describedby="emailcta" placeholder="Email">
                                 <span class="input-group-append">
                                     <a href="contact.html" onclick="SaveForm($('#emailcta').val());" class="btn-cta">SIGN UP</a>
                                 </span>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="col-12 pt-3">
                             <p class="text-left text-muted text-disclaimer">By signing up you agree to Jacobs <a href="privacy.html">Privacy Terms</a></p>
@@ -134,11 +140,11 @@
                 </div>
                 <div class="row d-flex justify-content-around py-5">
                     
-                    <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-2 p-5 d-flex align-items-center justify-content-center">
-                        <img class="img-fluid" src="./img/logo/mag-logo.svg" alt="Manchester" style="max-width:auto;" width="auto">
+                    <div class="col-12 col-sm-4 col-md-6 col-lg-6 col-xl-2 p-5 d-flex align-items-center justify-content-center">
+                        <img class="img-fluid" src="./img/logo/mag-logo.svg" alt="Manchester" width="auto">
                     </div>
-                    <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-2 p-5 d-flex align-items-center justify-content-center">
-                        <img class="img-fluid" src="./img/logo/gatwick-logo.svg" alt="Gatwick" style="max-width:auto;" width="auto">
+                    <div class="col-12 col-sm-4 col-md-6 col-lg-6 col-xl-2 p-5 d-flex align-items-center justify-content-center">
+                        <img class="img-fluid" src="./img/logo/gatwick-logo.svg" alt="Gatwick" width="auto">
                     </div>
                 </div>
             </div>
@@ -384,7 +390,8 @@
     <script src="js/main.js"></script>
     <script src="js/headline.js"></script>
     <script src="js/aos.js"></script>
-    <script src="js/pavy.contact.js"></script>
+    <!-- <script src="js/pavy.contact.js"></script> -->
+    <script src="js/contact.js"></script>
     <script>AOS.init({
             once: true,
         });</script>
