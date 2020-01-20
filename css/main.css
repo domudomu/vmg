@@ -145,7 +145,7 @@ body{
 }
 
 #conception{
-	height: 100%;
+	height: auto;
 	width: 100%;
 	/* min-height: 880px; */
 	background: url(../img/wavy-background-2.svg);
@@ -264,7 +264,7 @@ body{
 	min-height:100%;
 	color: #0D0D0D;
 }
-#testimonials{
+#about{
 	background-repeat:no-repeat;
     background-position: center center;
 	background-image: linear-gradient(to bottom right, #2fb7d6, #2290A9);
