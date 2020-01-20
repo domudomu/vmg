@@ -144,6 +144,19 @@ body{
 	background-position-y: 30px;
 }
 
+#conception{
+	height: 100%;
+	width: 100%;
+	/* min-height: 880px; */
+	background: url(../img/wavy-background-2.svg);
+    background-size: cover;
+	background-position: center;
+	padding-top: 5rem;
+	padding-bottom:5rem;
+	background-repeat: no-repeat;
+	background-position-y: 0px;
+}
+
 #contact-main{
 	height: 100%;
 	width: 100%;
