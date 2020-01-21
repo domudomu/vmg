@@ -40,7 +40,7 @@ body{
 		background-position: center;
 		-webkit-background-position: center;
 		padding-top: 5rem;
-		background-position-y: -100px;
+		/* background-position-y: -100px; */
 	}
 }
 @media only screen and (max-width: 1280px) {
@@ -52,7 +52,7 @@ body{
 		background-position: center;
 		-webkit-background-position: center;
 		padding-top: 5rem;
-		background-position-y: -100px;
+		/* background-position-y: -100px; */
 	}
 }
 @media only screen and (max-width: 900px) {
@@ -1192,3 +1192,9 @@ footer{
 	}
   }
   .alert-bottom{position:fixed;bottom:0;left:0;width:100%;z-index:999;font-size:14px;background-color:#ECEFF1;margin-bottom:0}
+
+  .border-gradient {
+    border-style: solid;
+  border-width: 0.5px;
+  border-image: linear-gradient(to left, rgba(255, 255, 255, 1) 1%, rgba(207,216,220 ,1) 50%, rgb(255, 255, 255) 100%) 100% 0 100% 0/1px 0 1px 0 stretch;
+}
