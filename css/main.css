@@ -3,12 +3,11 @@ html{
 }
 
 h1,h2,h3,h4,h5{
-	font-family: 'Muli', 'Helvetica', sans-serif;
-	color:#1D4682;
-	font-weight: 300;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
 }
 body{
-	font-family: 'Muli','Open Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 1.3rem;
 }
 @media only screen and (max-width: 900px) {
@@ -21,6 +20,17 @@ body{
 	font-size: 1rem;
 }
 
+.navbar-dark{
+	color: #FFFFFF;
+	background-color: #333333;
+}
+
+.navbar li{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	color: #FFFFFF;
+}
+
 #hero{
 	height: 100%;
 	/* min-height: 880px; */
@@ -30,100 +40,9 @@ body{
 	padding-top: 5rem;
 	/* padding-bottom:10rem; */
 	/* background-position-y: 30px; */
+	color:#FFFFFF;
 }
-@media only screen and (max-width: 1450px) {
-    #hero{
-		height: 100%;
-		background: url(../img/pavy-hero-background-5.svg);
-		background-size: cover;
-		-webkit-background-size: cover;
-		background-position: center;
-		-webkit-background-position: center;
-		padding-top: 5rem;
-		/* background-position-y: -100px; */
-	}
-}
-@media only screen and (max-width: 1280px) {
-    #hero{
-		height: 100%;
-		background: url(../img/pavy-hero-background-laptop.svg);
-		background-size: cover;
-		-webkit-background-size: cover;
-		background-position: center;
-		-webkit-background-position: center;
-		padding-top: 5rem;
-		/* background-position-y: -100px; */
-	}
-}
-@media only screen and (max-width: 900px) {
-    #hero {
-        background: url(../img/pavy-mobile-background.svg);
-        background-size: cover;
-        background-position: center;
-    }
-}
-@media screen and (min-width: 900px) {
-    .hidden-hero {
-        display: none;
-    }
-}
-#hero h1{
-	/* font-size: 60px; */
-	color: #1D4682;
-}
-@media only screen and (min-width: 1280px) {
-	.text-lg-nowrap {
-		white-space: nowrap;
-	}
-  }
 
-@media only screen and (max-width: 500px) {
-	#hero {
-		height: 100%;
-	}
-  }
-
-  @media only screen and (max-width: 1300px) {
-	#hero h1 {
-		font-size: 3rem;
-		text-align: left;
-	}
-  }
-@media only screen and (max-width: 500px) {
-	#hero h1 {
-		font-size: 2.5rem;
-		color: #1D4682;
-		text-align: left;
-	}
-  }
-@media only screen and (max-width: 500px) {
-	h1 {
-		font-size: 32px;
-		color: #1D4682;
-	}
-  }
-
-#hero-logo{
-	height: 120px;
-	width: auto;
-}
-@media only screen and (max-width: 500px) {
-	#hero-logo {
-		height: 60px;
-		margin-bottom: 0px;
-	}
-  }
-
-#opportunity{
-	background: url(../img/hero-map-3.jpg);
-    background-size: cover;
-	background-position: center;
-	border-top: 14px solid #1D4682;
-	border-bottom: 14px solid #1D4682;
-	padding-top: 5rem;
-	padding-bottom:5rem;
-	/* height: 100vh; */
-}
 @media only screen and (max-width: 500px) {
 	#hero {
 		padding-top: 0rem;
@@ -144,53 +63,6 @@ body{
 	background-position-y: 30px;
 }
 
-#conception{
-	height: auto;
-	width: 100%;
-	/* min-height: 880px; */
-	background: url(../img/wavy-background-2.svg);
-    background-size: cover;
-	background-position: center;
-	padding-top: 5rem;
-	padding-bottom:5rem;
-	background-repeat: no-repeat;
-	background-position-y: 0px;
-}
-
-#contact-main{
-	height: 100%;
-	width: 100%;
-	/* min-height: 880px; */
-	background: url(../img/wavy-background.svg);
-    background-size: cover;
-	background-position: center;
-	padding-top: 5rem;
-	padding-bottom:10rem;
-	background-repeat: no-repeat;
-	/* background-position-y: 30px; */
-}
-
-#benfeat h1{
-	color: #FFFFFF;
-}
-
-@media only screen and (max-width: 500px) {
-	#alignNavbar{
-		padding-right: 1rem;
-	}
-  }
-  @media only screen and (min-width: 501px) {
-	.nav-item{
-		padding-right: 5rem;
-	}
-  }
-/* 
-  @media only screen and (min-width: 1400px) {
-	#opportunity{
-		padding-top: 10rem;
-		padding-bottom: 10rem;
-	}
-  }   */
 .responsive{
 	max-width: 540px;
 	min-width: 100px;
@@ -1065,7 +937,7 @@ footer{
 		padding-right: 10rem;
 		padding-top: 1.2rem;
 		padding-bottom: 1.2rem;
-		background-color: white;
+		background-color: #333333;
 	  }
   }
   @media only screen and (min-width: 800px) {
@@ -1074,7 +946,7 @@ footer{
 		padding-right: 5rem;
 		padding-top: 1.2rem;
 		padding-bottom: 1.2rem;
-		background-color: white;
+		background-color: #333333;
 	  }
   }  
   @media only screen and (max-width: 799px) {
@@ -1083,7 +955,7 @@ footer{
 		padding-right: 3rem;
 		padding-top: 1rem;
 		padding-bottom: 1rem;
-		background-color: white;
+		background-color: #333333;
 	  }
   }  
   @media only screen and (max-width: 500px) {
@@ -1092,7 +964,7 @@ footer{
 		padding-right: 1rem;
 		padding-top: 1rem;
 		padding-bottom: 1rem;
-		background-color: white;
+		background-color: #333333;
 	  }
   }  
 
@@ -1198,3 +1070,111 @@ footer{
   border-width: 0.5px;
   border-image: linear-gradient(to left, rgba(255, 255, 255, 1) 1%, rgba(207,216,220 ,1) 50%, rgb(255, 255, 255) 100%) 100% 0 100% 0/1px 0 1px 0 stretch;
 }
+
+header {
+	position: relative;
+	background-color: black;
+	height: 75vh;
+	min-height: 25rem;
+	width: 100%;
+	overflow: hidden;
+  }
+  
+  header video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: 0;
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+  }
+  
+  header .container {
+	position: relative;
+	z-index: 2;
+  }
+  
+  header .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: 0.5;
+	z-index: 1;
+  }
+  
+
+  @media only screen and (max-width: 500px) {
+	header {
+		background: url('../img/hero-mobile.jpg') black no-repeat center center scroll;
+	  }
+	  header video {
+		display: none;
+	  }
+  }
+
+  #hero.container{
+	padding-top:3rem;
+  }
+
+  /* Animate Play button */
+  /* .path {
+	stroke-dasharray: 500;
+	stroke-dashoffset: 500;
+	animation: dash 5s linear reverse infinite;
+  }
+  
+  @keyframes dash {
+	from {
+	  stroke-dashoffset: 1000;
+	}
+	to {
+	  stroke-dashoffset: 0;
+	}
+  } */
+  circle {
+	stroke: #FFF; 
+	stroke-width: 2px;
+	stroke-opacity: 1;
+  }
+  
+  .pulse {
+	fill: white;
+	fill-opacity: 0;
+	transform-origin: 50% 50%;
+	animation-duration: 3s;
+	animation-name: pulse;
+	animation-iteration-count: infinite;
+  }
+
+  .color-change{
+	animation-name: color-change;
+	animation-duration: 3s;
+	-webkit-transition: stroke 1s ease-in-out;
+  	transition: stroke 1s ease-in-out;
+  }
+  
+  @keyframes pulse {
+	from {
+	  stroke-width: 3px;
+	  stroke-opacity: 1;
+	  transform: scale(0.2);
+	}
+	to {
+	  stroke-width: 0;
+	  stroke-opacity: 0;
+	  transform: scale(6);
+	}
+	0%   {stroke: white;}
+  25%  {stroke: #FF465F;}
+  50%  {stroke: #0AD287;}
+  100% {stroke: #FFFFFF;}
+  }
