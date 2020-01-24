@@ -10,15 +10,40 @@
 //     }   
 // });
 
-(function($) {
-    "use strict"; // Start of use strict
+$(document).ready(function() {
+
+  // Gets the video src from the data-src on each button
   
-    // Detect when form-control inputs are not empty
-    $(".cool-b4-form .form-control").on("input", function() {
-      if ($(this).val()) {
-        $(this).addClass("hasValue");
-      } else {
-        $(this).removeClass("hasValue");
-      }
-    });
-  })(jQuery); // End of use strict
+  var $videoSrc;  
+  $('.video-btn').click(function() {
+      $videoSrc = $(this).data( "src" );
+  });
+  console.log($videoSrc);
+  
+    
+    
+  // when the modal is opened autoplay it  
+  $('#vidModal').on('shown.bs.modal', function (e) {
+      
+  // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+  $("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" ); 
+  })
+    
+  
+  
+  // stop playing the youtube video when I close the modal
+  $('#vidModal').on('hide.bs.modal', function (e) {
+      // a poor man's stop video
+      $("#video").attr('src',$videoSrc); 
+  }) 
+      
+      
+  
+  
+    
+    
+  // document ready  
+  });
+  
+  
+  
