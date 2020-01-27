@@ -56,17 +56,15 @@ body {
   }
 }
 
-#benefits {
+#contact {
   height: 100%;
   width: 100%;
   /* min-height: 880px; */
-  background: url(../img/wavy-background-invert.svg);
+  background: url(../img/hero-mask-1.svg);
   background-size: cover;
   background-position: center;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
   background-repeat: no-repeat;
-  background-position-y: 30px;
+  /* background-position-y: -0px; */
 }
 
 .responsive {
@@ -1117,6 +1115,11 @@ footer {
   }
 }
 
+.video-background-holder{
+  display:flex;
+  align-content: center;
+}
+
 .video-background-holder video {
   position: absolute;
   top: 50%;
@@ -1144,22 +1147,25 @@ footer {
   height: 100%;
   width: 100%;
   background-color: black;
-  opacity: 0.5;
+  opacity: 0.65;
   z-index: 1;
 }
 
 @media only screen and (max-width: 500px) {
-  #header {
-    background: url("../img/hero-mobile.jpg") black no-repeat center center
-      scroll;
+  #hero {
+    background: url("../img/hero-mobile.jpg") black no-repeat center top fixed;
+    height:100%;
   }
-  #header video {
+  #hero video {
     display: none;
   }
 }
-#hero.container {
-  padding-top: 24rem;
+@media only screen and (max-width: 500px){
+  #hero-svg{
+    display:none;
+  }
 }
+
 
 @media only screen and (max-width: 500px) {
   #hero.container {
@@ -1310,3 +1316,7 @@ font-weight: normal;
 color:#fff;
 opacity:1;
 }
+
+.clip-svg {
+  clip-path: url(#myClip);
+  }

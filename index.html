@@ -63,47 +63,81 @@
     <main id="main" role="main">
         <div class="video-background-holder">
             <div class="video-background-overlay"></div>
-            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-                  <source src="./vid/vmg-demo-sneak.mp4" type="video/mp4">
-              </video>
+            <!-- <img  class="clip-svg" src="https://images.unsplash.com/photo-1566324034070-d61e790b7a4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt=""> -->
+            <video class="clip-svg"  playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                <source src="./vid/vmg-demo-sneak.mp4" type="video/mp4">
+          </video>
             <div id="hero" class="container video-background-content">
             <div class="d-flex h-100 text-center align-items-center">
                 <div class="w-100 text-white">
                     <h3>Digital Solutions | VISUAL MEDIA GROUP</h3>
                     <h1 class="display-3">Visualise The Future</h1>
                     <h3 class="py-3">Coming Soon</h3>
-                    <button type="button" class="btn video-btn" data-toggle="modal" data-src="https://www.youtube.com/watch?v=B5XcXtdNjrU" data-target="#vidModal">
+                    <button type="button" class="btn video-btn" data-toggle="modal" data-src="./vid/vmg-demo-sneak.mp4" data-target="#vidModal">
                         <svg version="1.1" id="play" xmlns="http://www.w3.org/2000/svg"xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="100px" width="100px"viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                        <circle cx = "50%" cy = "50%" r = "7px"></circle>
-                        <circle class = "pulse" cx = "50%" cy = "50%" r = "10px"></circle>
-                        <path class="path" fill="none" stroke="#FFF" stroke-width="3px"  d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7
-                                    C97.3,23.7,75.7,2.3,49.9,2.5"/>
-                        <path class="icon" fill="#FFF" d="M38,69c-1,0.5-1.8,0-1.8-1.1V32.1c0-1.1,0.8-1.6,1.8-1.1l34,18c1,0.5,1,1.4,0,1.9L38,69z"/>
-                    </svg>
-                </button>
-                <div class="modal fade" id="vidModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-body">
-                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>        
-                          <!-- 16:9 aspect ratio -->
-                  <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
-                  </div>
-                          
-                          
-                        </div>
-                  
-                      </div>
-                    </div>
-                  </div> 
+                            <circle cx = "50%" cy = "50%" r = "7px"></circle>
+                            <circle class = "pulse" cx = "50%" cy = "50%" r = "10px"></circle>
+                            <path class="path" fill="none" stroke="#FFF" stroke-width="3px"  d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7
+                                        C97.3,23.7,75.7,2.3,49.9,2.5"/>
+                            <path class="icon" fill="#FFF" d="M38,69c-1,0.5-1.8,0-1.8-1.1V32.1c0-1.1,0.8-1.6,1.8-1.1l34,18c1,0.5,1,1.4,0,1.9L38,69z"/>
+                        </svg>
+                    </button>
                 </div>
             </div>
+            <svg id="hero-svg" width="100" height="100" viewBox="0 0 1900 925"
+                xmlns="http://www.w3.org/2000/svg" stroke-linejoin="round">
+                <style>.a{fill:#FFFFFF;}
+                    @keyframes slide {
+                        0% {
+                            transform: translateY(0px);
+                          }
+                          100% {
+                              transform: translateY(1100px);
+                            }
+                      }
+                      #pillar1 {
+                        transform: translateY(0px);
+                        animation: slide 5s 1s cubic-bezier(.55,0,.1,1) forwards;
+                      }
+                      #pillar2 {
+                        transform: translateY(0px);
+                        animation: slide 5.5s 1s cubic-bezier(.55,0,.1,1) forwards;
+                      }
+                      #pillar3 {
+                        transform: translateY(0px);
+                        animation: slide 5.8s 1s cubic-bezier(.55,0,.1,1) forwards;
+                      }
+                      #pillar4 {
+                        transform: translateY(0px);
+                        animation: slide 5.2s 1s cubic-bezier(.55,0,.1,1) forwards;
+                      }
+                </style>
+                <rect width="1900" height="925" fill="none"/>
+                <clipPath id="myClip">
+                    <rect id="pillar1" x="21.71" y="-1000" width="442.594" height="925"/>
+                    <rect id="pillar2" x="493.039" y="-1000" width="442.594" height="925" />
+                    <rect id="pillar3" x="964.368" y="-1000" width="442.594" height="925" />
+                    <rect id="pillar4" x="1435.7" y="-1000" width="442.594" height="925" />
+            </clipPath>
+            </svg>
         </div>
           </div>
         <section id="contact">
+            <div class="modal fade" id="vidModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>        
+                      <!-- 16:9 aspect ratio -->
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div> 
             <div class="pillar-cont">
                 <div class="col-3 pillar pillar-blue"></div>
                 <div class="col-3 pillar pillar-red"></div>
