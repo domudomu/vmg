@@ -39,7 +39,7 @@ body {
 #hero {
   /* height: calc(100vh - 10rem); */
   /* min-height: 880px; */
-  background: url(../img/pavy-hero-background-5.svg);
+  /* background: url(../img/pavy-hero-background-5.svg); */
   background-size: cover;
   background-position: center;
   padding-top: 5rem;
@@ -1319,4 +1319,40 @@ opacity:1;
 
 .clip-svg {
   clip-path: url(#myClip);
+  -webkit-clip-path: url(#myClip);
   }
+
+  .slide1,.slide2,.slide3,.slide4,.slide5 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .slide1 {
+    background: url(../img/hero-static.jpg)no-repeat center;
+        background-size: cover;
+      /* animation:fade 8s infinite;
+  -webkit-animation:fade 8s infinite; */
+  }
+  @keyframes fade
+  {
+    0%   {opacity:1}
+    33.333% { opacity: 0}
+    66.666% { opacity: 0}
+    100% { opacity: 1}
+  }
+  @keyframes fade2
+  {
+    0%   {opacity:0}
+    33.333% { opacity: 1}
+    66.666% { opacity: 0 }
+    100% { opacity: 0}
+  }
+  @keyframes fade3
+  {
+    0%   {opacity:0}
+    33.333% { opacity: 0}
+    66.666% { opacity: 1}
+    100% { opacity: 0}
+  }
+
+  

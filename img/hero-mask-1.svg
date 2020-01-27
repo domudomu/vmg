@@ -1,6 +1,6 @@
-<svg width="100" height="100" viewBox="0 0 1900 925"
+<svg width="100%" height="auto" viewBox="0 0 1900 925"
     xmlns="http://www.w3.org/2000/svg" stroke-linejoin="round">
-    <style>.a{fill:none; stroke: #333;stroke-width:1px;stroke-opacity:0.1}</style>
+    <style>.a{fill:none; stroke: #333;stroke-width:3px;stroke-opacity:0.1}</style>
     <rect width="1900" height="925" fill="none"/>
     <clipPath>
         <rect width="1900" height="925"/>
