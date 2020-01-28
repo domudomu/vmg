@@ -1355,4 +1355,7 @@ opacity:1;
     100% { opacity: 0}
   }
 
-  
+  /* Seemed to center the Hero SVG background - no negative effect on the clipPath */
+.hero-svg{
+  background-size: contain;
+}
