@@ -916,7 +916,6 @@ opacity:1;
 
 .clip-svg {
   clip-path: url(#myClip);
-  -webkit-clip-path: url(#myClip);
   }
 
 .hero-svg{
