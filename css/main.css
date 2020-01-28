@@ -856,33 +856,6 @@ footer {
   transition: fill 0.8s ease-out;
 }
 
-.pillar-cont {
-  display: flex;
-  position: absolute;
-  width: 100%;
-  z-index: -1;
-}
-.pillar {
-  display: flex;
-  border-right: 0.8px rgba(51, 51, 51, 0.05) solid;
-  border-left: 0.8px rgba(51, 51, 51, 0.05) solid;
-  fill: #f2f5f7;
-  width: 100vh;
-  height: 100%;
-  z-index: -1;
-}
-.pillar-blue {
-  border-top: #0a7dff solid 10px;
-}
-.pillar-red {
-  border-top: #ff465f solid 10px;
-}
-.pillar-purple {
-  border-top: #a800a8 solid 10px;
-}
-.pillar-yellow {
-  border-top: #ffb41e solid 10px;
-}
 #contact {
   position: relative;
 }
@@ -916,6 +889,8 @@ opacity:1;
 
 .clip-svg {
   clip-path: url(#myClip);
+  /* -webkit-clip-path: url(#myClip); */
+  /* removed webkit prefix as it was breaking the clip on Safari */
   }
 
 .hero-svg{
