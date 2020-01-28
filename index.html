@@ -130,29 +130,53 @@
             <svg id="hero-svg" width="0" height="0" viewBox="0 0 1900 925"
                 xmlns="http://www.w3.org/2000/svg" stroke-linejoin="round">
                 <style>.a{fill:#FFFFFF;}
-                    @keyframes slide {
+                    @-webkit-keyframes slide {
                         0% {
-                            transform: translateY(0px);
+                            -webkit-transform: translateY(0px);
+                                    transform: translateY(0px);
                           }
                           100% {
-                              transform: translateY(1050px);
+                              -webkit-transform: translateY(1050px);
+                                      transform: translateY(1050px);
+                            }
+                      }
+                      @keyframes slide {
+                        0% {
+                            -webkit-transform: translateY(0px);
+                                    transform: translateY(0px);
+                          }
+                          100% {
+                              -webkit-transform: translateY(1050px);
+                                      transform: translateY(1050px);
                             }
                       }
                       #pillar1 {
-                        transform: translateY(0px);
-                        animation: slide 5s 1s cubic-bezier(.55,0,.1,1) forwards;
+                        -webkit-transform: translateY(0px);
+                            -ms-transform: translateY(0px);
+                                transform: translateY(0px);
+                        -webkit-animation: slide 5s 1s cubic-bezier(.55,0,.1,1) forwards;
+                                animation: slide 5s 1s cubic-bezier(.55,0,.1,1) forwards;
                       }
                       #pillar2 {
-                        transform: translateY(0px);
-                        animation: slide 5.5s 1s cubic-bezier(.55,0,.1,1) forwards;
+                        -webkit-transform: translateY(0px);
+                            -ms-transform: translateY(0px);
+                                transform: translateY(0px);
+                        -webkit-animation: slide 5.5s 1s cubic-bezier(.55,0,.1,1) forwards;
+                                animation: slide 5.5s 1s cubic-bezier(.55,0,.1,1) forwards;
                       }
                       #pillar3 {
-                        transform: translateY(0px);
-                        animation: slide 5.8s 1s cubic-bezier(.55,0,.1,1) forwards;
+                        -webkit-transform: translateY(0px);
+                            -ms-transform: translateY(0px);
+                                transform: translateY(0px);
+                        -webkit-animation: slide 5.8s 1s cubic-bezier(.55,0,.1,1) forwards;
+                                animation: slide 5.8s 1s cubic-bezier(.55,0,.1,1) forwards;
                       }
                       #pillar4 {
-                        transform: translateY(0px);
-                        animation: slide 5.2s 1s cubic-bezier(.55,0,.1,1) forwards;
+                        -webkit-transform: translateY(0px);
+                            -ms-transform: translateY(0px);
+                                transform: translateY(0px);
+                        -webkit-animation: slide 5.2s 1s cubic-bezier(.55,0,.1,1) forwards;
+                                animation: slide 5.2s 1s cubic-bezier(.55,0,.1,1) forwards;
                       }
                 </style>
                 <rect width="1900" height="925" fill="none"/>
@@ -189,7 +213,7 @@
                 <div class="col-3 pillar pillar-purple"></div>
                 <div class="col-3 pillar pillar-yellow"></div>
             </div>
-            <div class="container">
+            <div class="container py-5">
                 <div class="grid">
                     <div class="grid_item first one-quarter">
                     </div>
