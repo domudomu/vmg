@@ -878,10 +878,10 @@ opacity:1;
 }
 
 .clip-svg {
-  clip-path: url(#myClip);
-  /* -webkit-clip-path: url(#myClip); */
-  /* removed webkit prefix as it was breaking the clip on Safari */
-  }
+    clip-path: url(#heroClip);
+    /* -webkit-clip-path: url(#heroClip); */
+    /* removed webkit prefix as it was breaking the clip on Safari */
+}
 
 .hero-svg{
   background-size: contain;
@@ -909,3 +909,8 @@ opacity:1;
 .grid_item.second {left:25%;border-top: #A800A8 solid 20px;}
 .grid_item.third {left:50%;border-top: #FFB41E solid 20px;}
 .grid_item.fourth {left:75%;border-top: #0AD287 solid 20px;}
+
+/*#vid-play-btn {
+    -webkit-appearance: none;
+    background-color: rgba(0,0,0,0);
+}*/
